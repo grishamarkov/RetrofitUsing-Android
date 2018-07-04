@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false">
+
+  <!-- App Logo -->
+
+  <ImageView
+      android:id="@+id/logoImageView"
+      android:focusable="true"
+      android:src="@mipmap/ic_launcher"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/logo_margin_top"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="@dimen/account_item_margin_bottom"
+      android:nextFocusDown="@+id/ib_account"
+      android:nextFocusLeft="@+id/ib_account"
+      android:nextFocusRight="@+id/ib_account"
+      android:nextFocusUp="@+id/ib_account">
+
+    <requestFocus/>
+
+  </ImageView>
+
+  <LinearLayout
+      android:id="@+id/ll_accounts_container"
+      android:layout_width="match_parent"
+      android:layout_height="500dp"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:layout_alignParentTop="true"
+      android:layout_alignEnd="@+id/logoImageView">
+
+    <include layout="@layout/account_item"
+        android:id="@+id/firstUser"/>
+    <include layout="@layout/account_item"
+        android:id="@+id/secondUser"/>
+    <include layout="@layout/account_item"
+        android:id="@+id/thirdUser"/>
+    <include layout="@layout/add_account_item"
+        android:id="@+id/addUser"/>
+
+  </LinearLayout>
+
+</RelativeLayout>
