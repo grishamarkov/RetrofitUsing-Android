@@ -1,6 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.n2me.androidtv">
   // ---------------------- //
+ // ---------------------- //
     <uses-feature
         android:name="android.hardware.microphone"
         android:required="false"      />
